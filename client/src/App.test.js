@@ -11,7 +11,6 @@ it('renders without crashing', () => {
 })
 
 test('Player data is present', () => {
-  console.log('HERE', playerData.data[0])
   expect(playerData.data[0].name).toBe("Alex Morgan")
   expect(playerData.data[0].country).toBe("United States")
   expect(playerData.data[0].searches).toBe(100)
@@ -23,6 +22,11 @@ test('Player data is present', () => {
   expect(playerData.data[2].name).toBe("Marta")
   expect(playerData.data[2].country).toBe("Brazil")
   expect(playerData.data[2].searches).toBe(18)
+})
+
+test('Ensure server is working', () => {
+  expect(fetch("http://localhost:5000/api/players")).resolves.toBeTruthy()
+  expect(fetch("http://localhost:5000/api/players")).rejects.toBeFalsy()
 })
 
 
