@@ -8,6 +8,8 @@ You would use class components over function components if you wanted to use loc
 
 2. `ComponentDidUpdate` is invoked as soon as the updating phases happens. The most common use case for the componentDidUpdate() method is updating the DOM in response to prop or state changes.
 
+3. `ComponentDidCatch` works similar to JavaScript’s `catch {}` block but for components. It catches any errors that are propogated up to it and renders a backup component so the app won't crash and show the user an ugly error message.
+
 - [ ] What is the purpose of a custom hook?
 
 The main purpose of a custom hook is to share stateful logic between components.
