@@ -4,12 +4,12 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "@testing-library/react": "^9.1.4",
     "body-parser": "^1.18.3",
     "cors": "^2.8.3",
     "express": "^4.15.2"
   },
   "devDependencies": {
+    "@testing-library/react": "^9.1.4",
     "nodemon": "^1.19.2"
   },
   "scripts": {
